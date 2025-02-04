@@ -57,6 +57,47 @@ class Post extends Model
 }
 ```
 
+## 📊 Example Data
+You can create, update, and delete posts to generate log records. Here are some examples:
+
+### Create a New Post
+```php
+Post::create([
+    'title' => 'First Post',
+    'content' => 'This is a sample post.'
+]);
+```
+
+### Update a Post
+```php
+$post = Post::find(1);
+$post->update([
+    'title' => 'Updated Post Title'
+]);
+```
+
+### Delete a Post
+```php
+$post = Post::find(1);
+$post->delete();
+```
+
+### Sample Log Record
+A sample log entry in the `logs` table might look like this:
+
+```json
+{
+  "id": 1,
+  "model": "App\\Models\\Post",
+  "model_id": 1,
+  "before": {"title": "First Post", "content": "This is a sample post."},
+  "after": {"title": "Updated Post Title", "content": "This is a sample post."},
+  "action": "updated",
+  "created_at": "2025-02-04T12:00:00Z",
+  "updated_at": "2025-02-04T12:00:00Z"
+}
+```
+
 ## 📄 License
 This project is licensed under the MIT License.
 
