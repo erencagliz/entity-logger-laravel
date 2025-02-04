@@ -4,18 +4,18 @@ Entity Logger Laravel is a simple logging system that automatically logs CRUD (C
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### 1️. Clone the Repository
 ```bash
 git clone https://github.com/username/entity-logger-laravel.git
 cd entity-logger-laravel
 ```
 
-### 2️⃣ Install Dependencies
+### 2️. Install Dependencies
 ```bash
 composer install
 ```
 
-### 3️⃣ Configure Environment Variables
+### 3️. Configure Environment Variables
 ```bash
 cp .env.example .env
 php artisan key:generate
@@ -28,24 +28,24 @@ DB_USERNAME=root
 DB_PASSWORD=secret
 ```
 
-### 4️⃣ Set Up the Database
+### 4️. Set Up the Database
 ```bash
 php artisan migrate
 ```
 
-### 5️⃣ Start the Project
+### 5️. Start the Project
 ```bash
 php artisan serve
 ```
 
 You can now access the project at [http://localhost:8000](http://localhost:8000).
 
-## 🗒️ Features
+## Features
 - Logs **create**, **update**, and **delete** operations on models.
 - Stores data before and after changes.
 - Simple and easy to integrate.
 
-## ⚙️ Usage
+## Usage
 To enable logging in a new model, simply add the following trait:
 
 ```php
@@ -57,7 +57,7 @@ class Post extends Model
 }
 ```
 
-## 📊 Example Data
+## Example Data
 You can create, update, and delete posts to generate log records. Here are some examples:
 
 ### Create a New Post
