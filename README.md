@@ -98,6 +98,3 @@ A sample log entry in the `logs` table might look like this:
 }
 ```
 
-## 📄 License
-This project is licensed under the MIT License.
-
