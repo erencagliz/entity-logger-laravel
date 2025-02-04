@@ -2,7 +2,7 @@
 
 Entity Logger Laravel is a simple logging system that automatically logs CRUD (Create, Read, Update, Delete) operations performed on models in Laravel-based projects.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1️. Clone the Repository
 ```bash
